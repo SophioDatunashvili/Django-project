@@ -9,7 +9,7 @@ from user.forms import UserForm
 
 def userform(request):
     uform = UserForm
-    return render(request, 'userform.html', {'uform': uform})
+    return render(request, 'templates/userform.html', {'uform': uform})
 
 def saveform(request):
     uform = UserForm(request.POST)
